@@ -1,0 +1,192 @@
+<!doctype html>
+    <head>
+        <title>Sh.M.U."Adem Jashari"
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+       <!-- <script src="jquery-3.2.1.min.js"></script>   -->
+
+        <link rel="stylesheet" href="formatizimi.css">
+        <script>
+            $(document).ready(function(){
+            $(".btn1").click(function(){
+              $("form").hide(1000);
+            });
+            $(".btn2").click(function(){
+              $("form").show(1000);
+            });
+          });
+          sessionstorage.clickcount = 0;
+          function clickCounter(){
+          if (typeof(Storage) !== "undefined") {
+            if (sessionStorage.clickcount) {
+              sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+              alert("ju tashme jeni regjistruar");
+            } else {
+              sessionStorage.clickcount = 1;
+              alert("jeni Regjistruar me sukses");
+            }
+        }}
+
+           function getStylesheet(){
+               var d = new Date();
+                var n = d.getHours();
+
+
+
+
+                if(0<=n&&n<8){
+                     document.body.style.backgroundColor = "red";
+                }
+                else if(8<=n&&n<18){
+                     document.body.style.backgroundColor = "white";
+                }
+                else
+                     document.body.style.backgroundColor = "black";
+
+
+
+                getStylesheet();
+           }
+            </script>
+    </head>
+    <body onload="startTime();getStylesheet()">
+        <div id="radio1"><br>
+
+            <h1>Sh.m.u. "Adem Jashari"</h1><div id="ora" style="color:grey;margin-left: 15%"></div><h3 class="veq">Jemi te paret dhe me te miret</h3>
+       <div class="tre"><h2 id="HOMEPAGE"><a href="kryefaqja.html">Kryefaqja</a></h2>
+            <h2 id="Historiku"><a href="historiku.html">Historiku</a></h2>
+            <div class="dropdown">
+                <button class="dropbtn"><h2>Stafi</h2></button>
+            <div class="dropdown-content">
+            <a href="mesuesit.php">Mesuesit</a>
+            <a href="administrata.php">Administrata</a>
+            </div>
+            <a href="formulari.php">Formular Aplikimi</a>
+            </div>
+            <h2 id="Foto"><a href="foto.html">Foto</a></h2>
+            <h2 id="Formular_Aplikimi"><a href="#">Formular Aplikimi</a></h2>
+       </div>
+       </div>
+            <div class="goat">
+                <div class="grid-container">
+                    <div class="item3">
+                        <div class="grid-container1 " >
+                            <div ><img class="rreth" src="recycle.png" width="20" height="20" alt="recycle"><Strong>Pastrimi i Ambientit</strong><br>
+                            Me mbeshtetje te USAID kemi
+                            pastruar rrethine e shkolles
+                            Perveq nxenesve dhe stafit akademik<br>
+
+                            <a href="blogu1.html">Per me shume </a>
+                            </div>
+                            <div><img class="rreth" src="music.png" width="20" height="20" alt="music"><Strong>Recitali</Strong><br>
+                            Ne fund te vitit u mbajt recitali
+                            i zakonshem vjetor<br>
+                            <a href="blogu2.html">Per me shume</a>
+                            </div>
+
+                            <div><img class="rreth" src="charity.png" width="20" height="20" alt="charity"><strong><big>Veprimtari Bamirse</big></strong><br>
+                            Nxenesit kane shitur biskota
+                            dhe parat e mledhura i kane
+                            perdorur per bamirsi<br>
+                            <a href="blogu3.html">Per me shume</a>
+                            </div>
+                            <div><img class="rreth" src="Albania.png" width="20" height="20" alt="Albania"><strong><big>Koncerti i 28 Nentorit</big></strong><br>
+                            Festa e 28 nentorit eshte nje
+                            feste e veqant gjithmon ne
+                            shkollen tone.<br>
+                            <a href="blogu4.html">Per me shume</a>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="item4">
+                            <img class="majta" src="foto4.jpg" width="260" height="260" alt="skafoto"><br>
+                        <img class="kresha" src="foto5.jpg" width="125" height="125" alt="ska foto">
+                        <img class="kresha" src="foto6.jpg" width="125" height="125" alt="ska foto"><br>
+                        <img class="kresha" src="foto7.jpg" width="125" height="125" alt="ska foto">
+                        <img class="kresha" src="foto8.jpg" width="125" height="125" alt="ska foto">
+
+                        </div>
+
+
+
+
+                <div class="item5">
+
+                <img class="hapsire" src="foto1.jpg" width="200" height="130" alt="ska foto">
+                <img class="hapsire" src="foto2.jpg" width="200" height="130" alt="ska foto">
+                <img class="hapsire" src="foto3.jpg" width="200" height="130" alt="ska foto"></div>
+                </div></div>
+
+
+       <div class="fundi"><p><a href="#">Rikthehuni ne fillim</a></p></div><br><br>
+
+
+     <form style="float:left; margin: 1% 3% 3% 3%;">
+            <table>
+                <tr>
+                    <td>
+                        <label style="color: white">Emri:</label>
+                        <br>
+                        <input type ="text" name="emri" size="20"/>
+                    </td>
+
+                    <td>
+                        <label style="color:white"> E-mail:</label>
+                        <br>
+                        <input type ="email" name ="email" size="19"/>
+                    </td>
+                 </tr>
+            </table>
+
+            <br>
+            <label style="color: white">Mesazhi:</label>
+            <br>
+            <textarea name="description" rows="4" cols="39"></textarea>
+            <br><br>
+            <input onclick="clickCounter()" type ="submit"  value="Regjistrohu"/>
+            </form>
+
+        <div class="dubai">
+            <h3 class="perdore">Aktivitetet</h3><hr>
+            <h4><a href="Blogu1.html">Pastrimi i ambientit</a></h4>
+            <h4><a href="Blogu2.html">Recitali</a></h4>
+            <h4><a href="Blogu3.html">Veprimtari bamirsie</a></h4>
+            <h4><a href="Blogu4.html">Koncerti i 28 nentorit</a></h4>
+        </div>
+
+        <div class="kairo">
+            <h3 class="perdore">Kontakti</h3><hr>
+            <h4><img src="fb.png" alt="fb"/><a href="https://www.facebook.com/" target="blank"><big>Facebook</big></a></h4>
+            <h4><img src="flickr.png" alt="tw"/><a href="https://twitter.com/" target="blank"><big>Twitter</big></a></h4>
+            <h4><img src="twitter.png" alt="in"/><a href="https://www.flickr.com/" target="blank"><big>Flickr</big></a></h4>
+        </div><br><br>
+        <button class="btn1">fshih</button>
+        <button class="btn2">Shfaq</button>
+
+        <div class="jeta" style="color:gray;display: inline-block;" >
+           <em> Te gjitha te drejtat e rezervuara</em>
+
+        </div>
+
+       <script>
+            function startTime() {
+              var today = new Date();
+              var o = today.getHours();
+              var m = today.getMinutes();
+              var s = today.getSeconds();
+              o = checkTime(o);
+              m = checkTime(m);
+              s = checkTime(s);
+              document.getElementById('ora').innerHTML =
+              o + ":" + m + ":" + s;
+              var t = setTimeout(startTime, 1000);
+            }
+            function checkTime(i) {
+              if ( i < 10) {i = "0" + i;}  // add zero in front of numbers < 10
+              return i;
+            }
+
+       </script>
+
+    </body>
+</html>
